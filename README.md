@@ -1,10 +1,11 @@
 # Devon's Esolang Message Program Generator
 ![Esolang Program Generator](Esolang.png)
 
-An esolang program generator that displays a message.
+An esoteric programming language program generator that displays a message in a chosen language.
 
 ## Supports
-* Brainf**k
-* Boolf**k
-* Whitespace
-* LOLCODE
+* [Brainf**k](https://en.wikipedia.org/wiki/Brainfuck)
+* [Boolf**k](http://samuelhughes.com/boof/)
+* [Whitespace](https://en.wikipedia.org/wiki/Whitespace_(programming_language))
+* [LOLCODE](https://en.wikipedia.org/wiki/LOLCODE)
+* [LoveLang](https://github.com/DevonArtmeier/LoveLangInterpreter)

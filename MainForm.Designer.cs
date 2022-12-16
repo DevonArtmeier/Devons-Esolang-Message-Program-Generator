@@ -83,7 +83,8 @@
             "Brainf**k",
             "Boolf**k",
             "Whitespace",
-            "LOLCODE"});
+            "LOLCODE",
+            "LoveLang"});
             this.cbLanguage.Location = new System.Drawing.Point(308, 202);
             this.cbLanguage.Name = "cbLanguage";
             this.cbLanguage.Size = new System.Drawing.Size(121, 23);
