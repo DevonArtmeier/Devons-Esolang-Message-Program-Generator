@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace EsolangMsgGen
+namespace EsolangMsgGenWPF
 {
     internal class Brainfk
     {
@@ -80,7 +80,9 @@ namespace EsolangMsgGen
 
             foreach (byte msgByte in Encoding.UTF8.GetBytes(message))
             {
-                sb.Append((msgByte < curByte) ? subOps[curByte - msgByte] : addOps[msgByte - curByte]);
+                sb.Append((msgByte < curByte) ?
+                    subOps[curByte - msgByte] :
+                    addOps[msgByte - curByte]);
                 curByte = msgByte;
             }
 

@@ -9,3 +9,6 @@ An esoteric programming language program generator that displays a message in a 
 * [Whitespace](https://en.wikipedia.org/wiki/Whitespace_(programming_language))
 * [LOLCODE](https://en.wikipedia.org/wiki/LOLCODE)
 * [LoveLang](https://github.com/DevonArtmeier/LoveLangInterpreter)
+
+## Dependencies
+* [Emoji.WPF](https://github.com/samhocevar/emoji.wpf)

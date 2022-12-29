@@ -1,0 +1,68 @@
+﻿<Window x:Class="EsolangMsgGenWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EsolangMsgGenWPF"
+        xmlns:emoji="clr-namespace:Emoji.Wpf;assembly=Emoji.Wpf"
+        mc:Ignorable="d"
+        Title="Devon's Esolang Message Program Generator" Height="308" Width="786"
+        WindowStyle="SingleBorderWindow">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBox Name="tbMessage"
+                       AcceptsReturn="True"
+                       TextWrapping="Wrap"
+                       VerticalScrollBarVisibility="Visible"
+                       FontSize="12"
+                       Margin="10,27,10,41"
+                       Grid.Column="0"/>
+        <emoji:TextBox Name="tbOutput"
+                       AcceptsReturn="True"
+                       TextWrapping="Wrap"
+                       VerticalScrollBarVisibility="Visible"
+                       IsReadOnly="True"
+                       FontSize="12"
+                       Margin="10,27,10,41"
+                       Grid.Column="1"/>
+        <ComboBox x:Name="cbLanguage"
+                  HorizontalAlignment="Left"
+                  Margin="79,0,0,10"
+                  VerticalAlignment="Bottom"
+                  Width="109"
+                  Grid.Column="0"
+                  SelectionChanged="UpdateGenProgram" Height="25">
+            <ComboBoxItem Content="Brainf**k"/>
+            <ComboBoxItem Content="Boolf**k"/>
+            <ComboBoxItem Content="Whitespace"/>
+            <ComboBoxItem Content="LOLCODE"/>
+            <ComboBoxItem Content="LoveLang"/>
+        </ComboBox>
+        <Button Content="Generate"
+                HorizontalAlignment="Left"
+                Margin="10,0,0,10"
+                VerticalAlignment="Bottom"
+                Width="80"
+                Grid.Column="1"
+                Click="UpdateGenProgram" Height="25"/>
+        <Label Content="Message"
+               HorizontalAlignment="Left"
+               Margin="10,1,0,0"
+               VerticalAlignment="Top"
+               Grid.Column="0"/>
+        <Label Content="Output Program"
+               HorizontalAlignment="Left"
+               Margin="10,1,0,0"
+               VerticalAlignment="Top"
+               Grid.Column="1"/>
+        <Label Content="Language"
+               HorizontalAlignment="Left"
+               Margin="10,0,0,10"
+               VerticalAlignment="Bottom"
+               Height="26" Width="64"
+               Grid.Column="0"/>
+    </Grid>
+</Window>
